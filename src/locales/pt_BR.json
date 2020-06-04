@@ -1,0 +1,286 @@
+{
+    "Todos":"Todos",
+    "Atualizado em": "Atualizado em",
+    "Publicado em": "Publicado em",
+    "Notícias": "Notícias",
+    "Sobre o": "Sobre o",
+    "Fale Conosco": "Fale Conosco",
+    "Fale com A GENTE": "Fale com A GENTE",
+    "Slogan": "Rede de Voluntários Inovadores contra o 'Vírus Embriagado'",
+    "Ideias": "Ideias",
+    "Soluções": "Soluções",
+    "Apoio": "Apoio",
+    "Voltar": "Voltar",
+    "Senha": "Senha",
+    "Buscar": "Buscar",
+    "Busca": "Busca",
+    "Área de Atuação": "Área de Atuação",
+    "Status da Ideia": "Status da Ideia",
+    "Mais": "Mais",
+    "Instituição": "Instituição",
+    "Disponível em": "Disponível em",
+    "Negócio": "Negócio",
+    "Cidade": "Cidade",
+    "Nome": "Nome",
+    "Contato": "Contato",
+    "Geral": "Geral",
+    "Descrição": "Descrição",
+    "Responsável": "Responsável",
+    "Nada Aqui": "Nada Aqui",
+    "Limpar Filtros": "Limpar Filtros",
+    "Casos": "Casos",
+    "Curas": "Curas",
+    "Mortes": "Mortes",
+    "Hoje": "Hoje",
+    "Novos Casos": "Novos Casos",
+    "Novas Mortes": "Novas Mortes",
+    "Casos Ativos": "Casos Ativos",
+    "Casos Graves": "Casos Graves",
+    "Fonte": "Fonte",
+    "Fechar": "Fechar",
+    "Editar": "Editar",
+    "Excluir": "Excluir",
+    "Ver Todas as Ideias": "Ver Todas as Ideias",
+    "Cadastrar Nova Ideia": "Cadastrar Nova Ideia",
+    "Modo Administrativo": "Modo Administrativo",
+    "Ativar": "Ativar",
+    "Desativar": "Desativar",
+    "Minhas Soluções": "Minhas Soluções",
+    "Realização": "Realização",
+    "Promoção": "Promoção",
+    "Colaboradores": "Colaboradores",
+    "Meus Fóruns": "Meus Fóruns",
+    "Fóruns de Discussão": "Fóruns de Discussão",
+    "Aconselhamento Tecnológico": "Aconselhamento Tecnológico",
+    "Aconselhamento Econômico": "Aconselhamento Econômico",
+    "Quantidade": "Quantidade",
+    "Acessos": "Acessos",
+    "Projeto de Saúde": "Projeto de Saúde",
+    "Trabalho / Renda": "Trabalho / Renda",
+    "Educação / Cursos": "Educação / Cursos",
+    "Serviços de Informação": "Serviços de Informação",
+    "Ação Social": "Ação Social",
+    "Mobilidade / Transporte": "Mobilidade / Transporte",
+    "Meio Ambiente / Urbanismo": "Meio Ambiente / Urbanismo",
+    "Grátis": "Grátis",
+    "Com Restrições": "Com Restrições",
+    "Pago": "Pago",
+    "Negócio à Venda": "Negócio à Venda",
+    "À Procura de Financiamento": "À Procura de Financiamento",
+    "À Procura de Parceria": "À Procura de Parceria",
+    "Cadastre sua Ideia": "Cadastre sua Ideia",
+    "Dados inválidos": "Dados inválidos!",
+    "Verifique os campos destacados!": "Verifique os campos destacados!",
+    "Nome da Ideia": "Nome da Ideia",
+    "Instituição ou Empresa": "Instituição ou Empresa",
+    "Link do Site": "E-mail/Link",
+    "Link do YouTube": "Link do YouTube",
+    "Selecione seu Estado": "Selecione seu Estado",
+    "Selecione sua Cidade": "Selecione sua Cidade",
+    "Área de Aplicação": "Área de Aplicação",
+    "Saúde": "Saúde",
+    "Economia": "Economia",
+    "Educação": "Educação",
+    "Comunicação": "Comunicação",
+    "Social": "Social",
+    "Outros": "Outros",
+    "Software": "Software",
+    "Hardware": "Hardware",
+    "Processo": "Processo",
+    "Material": "Material",
+    "Status": "Status",
+    "Produto Comercializado": "Produto Comercializado",
+    "Produto Lançado": "Produto Lançado",
+    "Produto Testado": "Produto Testado",
+    "Produto Terminado": "Produto Terminado",
+    "Produto em Desenvolvimento": "Produto em Desenvolvimento",
+    "Tipo de Negócio": "Tipo de Negócio",
+    "Disponível Gratuitamente": "Disponível Gratuitamente",
+    "Disponível com Restrições": "Disponível com Restrições",
+    "À Venda": "À Venda",
+    "À Procura de Financiamento Público": "À Procura de Financiamento Público",
+    "À Procura de Financiamento Privado": "À Procura de Financiamento Privado",
+    "Salvar": "Salvar",
+    "Tipo": "Tipo",
+    "Entrar": "Entrar",
+    "Solicitar": "Solicitar",
+    "Bio": "Professor do IFCE (desde 1974)",
+    "Login": {
+        "Entrar no REVIVE": "Entrar no REVIVE",
+        "Criar Conta": "Criar Conta",
+        "Mostrar Senha": "Exibir Senha",
+        "Esqueci a Senha": "Esqueci a Senha"
+    },
+    "Noticias": {
+        "Título": "Título",
+        "Subtítulo": "Subtítulo",
+        "Salvar": "Salvar",
+        "Cadastre sua notícia": "Registre sua notícia",
+        "Dados inválidos": "Dados inválidos!",
+        "Verifique os campos destacados!": "Verifique os campos destacados!"
+    },
+    "Lista": {
+        "Cadastrar Nova Notícia": "Cadastrar Nova Notícia",
+        "Notícias": "Notícias",
+        "Minhas Notícias": "Minhas Notícias"
+    },
+    "Registro": {
+        "Criar Minha Conta": "Criar Minha Conta",
+        "Dados inválidos": "Dados inválidos!",
+        "Verifique os campos destacados!": "Verifique os campos destacados!",
+        "Nome": "Nome",
+        "Telefone": "Telefone",
+        "WhatsApp (Opcional)": "WhatsApp (Opcional)",
+        "Pessoa Física": "Pessoa Física",
+        "Pessoa Jurídica": "Pessoa Jurídica",
+        "CPF (Opcional)": "CPF (Opcional)",
+        "Produtor de Ideias": "Produtor de Ideias",
+        "Interessado em Soluções": "Interessado em Soluções",
+        "Contribuidor e Investidor": "Contribuidor e Investidor",
+        "E-mail": "E-mail",
+        "Senha (mínimo de 8 caracteres)": "Senha (mínimo de 8 caracteres)",
+        "Confirmar Senha": "Confirmar Senha",
+        "Salvar": "Salvar "
+    },
+    "Home": {
+        "Estatísticas do COVID-19": "Estatísticas do COVID-19",
+        "Monitor do COVID-19": "Monitor do COVID-19",
+        "Notícias do COVID-19": "Notícias do COVID-19",
+        "Monitor de Fake News": "Monitor de Fake News",
+        "Introdução": {
+            "Título": "REVIVE, um ponto de encontro de",
+            "Subtítulo": "PESSOAS, IDEIAS e SOLUÇÕES",
+            "Descrição": "no enfrentamento ao CORONAVÍRUS"
+        },
+        "Cards": [
+            {
+                "Título": "Ideias",
+                "Descrição": "Compartilhe AQUI ações e produtos de combate ao COVID-19 para um mundo melhor.",
+                "Botão": "Cadastrar"
+            },
+            {
+                "Título": "Soluções",
+                "Descrição": "Conheça AQUI as ideias inovadoras que você procura para combater o COVID-19.",
+                "Botão": "Buscar"
+            },
+            {
+                "Título": "Apoio",
+                "Descrição": "Dê seu apoio AQUI às soluções já existentes para combater o COVID-19.",
+                "Botão": "Contribuir"
+            }
+        ]
+    },
+    "investimentos/Dashboard": {
+        "solucoes": [
+            {
+                "titulo": "Fundo REVIVE",
+                "descricao": "Colabore com a manutenção, administração e aperfeiçoamento da plataforma REVIVE.",
+                "icone": "ni ni-money-coins",
+                "botao": "Aplicar",
+                "link": "#/desenvolvimento",
+                "texto_modal": "A plataforma REVIVE é de responsabilidade do Prof. Mauro Oliveira, pesquisador do Programa de Pós-graduação em Ciência da Computação (PPGCC) do IFCE.",
+                "texto_modal_secundario": "Este projeto foi desenvolvido por professores e alunos do PPGCC. O propósito do Fundo REVIVE é a obtenção de recursos para manutenção, administração e aperfeiçoamento desta plataforma.",
+                "texto_modal_alerta": ""
+            },
+            {
+                "titulo": "Apoio Financeiro",
+                "descricao": "Apoie financeiramente uma das IDEIAS cadastradas na plataforma REVIVE.",
+                "icone": "ni ni-money-coins",
+                "botao": "Apoiar",
+                "link": "#/solucoes_lista",
+                "texto_modal": "É simples apoiar financeiramente uma das IDEIAS cadastradas no REVIVE. Você seleciona um dos projetos cadastrados (ÁREA de Atuação, Status da IDEIA ou Busca com Palavras-chave). Após a seleção, você deve entrar em contato com o RESPONSÁVEL pelo projeto para dar sua contribuição.",
+                "texto_modal_secundario": "Sugerimos que 1% de sua colaboração seja doado ao Fundo REVIVE.",
+                "texto_modal_alerta": "IMPORTANTE: A plataforma REVIVE não assume nenhum tipo de responsabilidade na aplicação dos recursos doados."
+            },
+            {
+                "titulo": "Criar Parceria",
+                "descricao": "Crie uma parceria com o responsável por uma das IDEIAS cadastradas na plataforma REVIVE.",
+                "icone": "ni ni-building",
+                "botao": "Criar",
+                "link": "#/desenvolvimento",
+                "texto_modal": "É simples fazer parceria COMERCIAL ou ACADÊMICA com uma das IDEIAS cadastradas no REVIVE. Você seleciona um dos projetos cadastrados pelo tipo de NEGÓCIO que lhe interessa.",
+                "texto_modal_secundario": "Em seguida, você seleciona o projeto pela ÁREA de Atuação, Status da IDEIA, ou Busca com Palavras-chave. Após a seleção do projeto, você deve entrar em contato com o RESPONSÁVEL para propor a parceria.",
+                "texto_modal_alerta": "IMPORTANTE: A plataforma REVIVE não assume nenhum tipo responsabilidades nas parcerias realizadas."
+            }
+        ],
+        "complemento": {
+            "modal": {
+                "informacoes": "Para mais informações, favor entrar em contato: mauro@lar.ifce.edu.br",
+                "ideias_b": "Lista de Ideias"
+            }
+        }
+    },
+    "forum": {
+        "Lista": {
+            "forum": {
+                "more": "Mais",
+                "join_forum": "Entrar no Fórum",
+                "edit": "Editar",
+                "delete": "Delete",
+                "modal_title": {
+                    "link": "Link",
+                    "description": "Descrição",
+                    "name": "Nome",
+                    "contact": "Contato",
+                    "general": "Geral",
+                    "responsable": "Responsável"
+                },
+                "modal_warning": {
+                    "heading": "Você realmente deseja excluir esse registro?",
+                    "warning": "A exclusão é permantente e não poderá ser revertida!",
+                    "cancel": "Cancelar",
+                    "delete": "Excluir"
+                },
+                "modal_join": {
+                    "title": "Como Entrar no Fórum?",
+                    "link": "O link já foi copiado para sua área de transferência!",
+                    "copie_link": "Copiar link novamente",
+                    "send_link_1": "1. Envie o link para um de seus contatos no WhatsApp.",
+                    "send_link_2": "2. Clique em \"Ver grupo\" para entrar no Fórum.",
+                    "send_link_3": "Use Ctrl + V para colar o link no WhatsApp!",
+                    "open_whatsapp": "Abrir WhatsApp Web",
+                    "I_understood": "Entendi"
+                }
+            },
+            "complemento": {
+                "nav_buttons": {
+                    "filter_all": "Ver Todos os Fóruns",
+                    "filter_my": "Ver Meus Fóruns",
+                    "registe": "Cadastrar Novo Fórum"
+                }
+            }
+        },
+        "Cadastro": {
+            "title": "Cadastre seu Fórum",
+            "ph_forum_name": "Nome do Fórum",
+            "ph_forum_link": "Link para Entrar no Fórum",
+            "whatsapp_link": "Crie um grupo no WhatsApp e insira o link no campo acima",
+            "ph_forum_description": "Descrição",
+            "save": "Salvar"
+        }
+    },
+    "Colaborador||Investidor": {
+        "text-warning": "Deseja se alistar?",
+        "description": "Texto motivacional ...",
+        "badge_warning1": "#paz",
+        "badge_warning2": "#amor",
+        "badge_warning3": "#sucesso",
+        "button_register": "Alistar-me",
+        "text-primary": "Deseja cadastrar um solução?",
+        "button_solucoes_cadastro": "Cadastrar solução"
+    },
+    "Item": {
+        "text-sucess": "Cadastrar Ideia",
+        "salvar": "Salvar"
+    },
+    "Em Desenvolvimento": {
+        "title": "Página em Desenvolvimento",
+        "lead": "Estamos trabalhando no desenvolvimento desta página, em breve você poderá disfrutar de seus maravilhosos recursos ;)"
+    },
+    "solucoes":{
+        "Cadastro":{
+            "caracteres":"caracteres.",
+            "Quantidade máxima de caracteres excedida! Por favor seja mais conciso":"Quantidade máxima de caracteres excedida! Por favor seja mais conciso."
+        }
+    }
+}

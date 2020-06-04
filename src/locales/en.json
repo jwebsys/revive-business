@@ -1,0 +1,299 @@
+{
+    "Todos": "All",
+    "Atualizado em": "Updated at",
+    "Publicado em": "Posted at",
+    "Notícias": "News",
+    "Sobre o": "About",
+    "Fale Conosco": "Contact Us",
+    "Fale com A GENTE": "Contact Us",
+    "Slogan": "Innovative Volunteer Network against 'Intoxicated Virus'",
+    "Ideias": "Ideas",
+    "Soluções": "Solutions",
+    "Apoio": "Support",
+    "Voltar": "Back",
+    "Senha": "Password",
+    "Buscar": "Search",
+    "Busca": "Search",
+    "Área de Atuação": "Occupation Area",
+    "Status da Ideia": "Idea Status",
+    "Mais": "More",
+    "Instituição": "Institution",
+    "Disponível em": "Available in",
+    "Negócio": "Business",
+    "Cidade": "City",
+    "Nome": "Name",
+    "Contato": "Contact",
+    "Geral": "General",
+    "Descrição": "Description",
+    "Responsável": "Responsible",
+    "Nada Aqui": "Nothing Here",
+    "Limpar Filtros": "Clear Filters",
+    "Casos": "Cases",
+    "Curas": "Cures",
+    "Mortes": "Deaths",
+    "Hoje": "Today",
+    "Novos Casos": "New Cases",
+    "Novas Mortes": "New Deaths",
+    "Casos Ativos": "Active Cases",
+    "Casos Graves": "Serious Cases",
+    "Fonte": "Source",
+    "Fechar": "Close",
+    "Editar": "Edit",
+    "Excluir": "Delete",
+    "Ver Todas as Ideias": "See All Ideas",
+    "Cadastrar Nova Ideia": "Register New Idea",
+    "Modo Administrativo": "Administrative Mode",
+    "Ativar": "Enable",
+    "Desativar": "Disable",
+    "Minhas Soluções": "My Solutions",
+    "Realização": "Realization",
+    "Promoção": "Promotion",
+    "Colaboradores": "Collaborators",
+    "Meus Fóruns": "My Forums",
+    "Fóruns de Discussão": "Discussion Forums",
+    "Aconselhamento Tecnológico": "Technological Advice",
+    "Aconselhamento Econômico": "Economic Advice",
+    "Quantidade": "Quantity",
+    "Acessos": "Access",
+    "Projeto de Saúde": "Health Project",
+    "Trabalho / Renda": "Work / Income",
+    "Educação / Cursos": "Education / Courses",
+    "Serviços de Informação": "Information Services",
+    "Ação Social": "Social Action",
+    "Mobilidade / Transporte": "Mobility / Transport",
+    "Meio Ambiente / Urbanismo": "Sustainability / Urbanism",
+    "Grátis": "Free",
+    "Com Restrições": "With Restrictions",
+    "Pago": "Paid Out",
+    "Negócio à Venda": "Business for Sale",
+    "À Procura de Financiamento": "Looking for Funding",
+    "À Procura de Parceria": "Looking for Partnership",
+    "Cadastre sua Ideia": "Register your Idea",
+    "Dados inválidos": "Invalid data!",
+    "Verifique os campos destacados!": "Check the highlighted fields.",
+    "Nome da Ideia": "Idea Name",
+    "Instituição ou Empresa": "Institution or Company",
+    "Link do Site": "Email/Link",
+    "Link do YouTube": "YouTube Link",
+    "Selecione seu Estado": "Select your State",
+    "Selecione sua Cidade": "Select your City",
+    "Área de Aplicação": "Application Area",
+    "Saúde": "Health",
+    "Economia": "Economy",
+    "Educação": "Education",
+    "Comunicação": "Communication",
+    "Social": "Social",
+    "Outros": "Others",
+    "Software": "Software",
+    "Hardware": "Hardware",
+    "Processo": "Process",
+    "Material": "Material",
+    "Status": "Status",
+    "Produto Comercializado": "Commercialized Product",
+    "Produto Lançado": "Launched Product",
+    "Produto Testado": "Tested Product",
+    "Produto Terminado": "Finished Product",
+    "Produto em Desenvolvimento": "Product under Development",
+    "Tipo de Negócio": "Business Type",
+    "Disponível Gratuitamente": "Available for Free",
+    "Disponível com Restrições": "Available with Restrictions",
+    "À Venda": "On Sale",
+    "À Procura de Financiamento Público": "Looking for Public Funding",
+    "À Procura de Financiamento Privado": "Seeking Private Finance",
+    "Salvar": "Save",
+    "Tipo": "Type",
+    "Entrar": "Enter",
+    "Solicitar": "Request",
+    "Bio": "Professor at IFCE (since 1974)",
+    "Login": {
+        "Entrar no REVIVE": "Enter REVIVE",
+        "Criar Conta": "Create an Account",
+        "Mostrar Senha": "Show Password",
+        "Esqueci a Senha": "Forgot Password"
+    },
+    "Noticias": {
+        "Título": "Title",
+        "Subtítulo": "Subtitle",
+        "Salvar": "Save",
+        "Cadastre sua notícia": "Register news",
+        "Dados inválidos": "Invalid data!",
+        "Verifique os campos destacados!": "Check the highlighted fields."
+    },
+    "Lista": {
+        "Cadastrar Nova Notícia": "Register news",
+        "Notícias": "News",
+        "Minhas Notícias": "My News"
+    },
+    "Registro": {
+        "Criar Minha Conta": "Create Account",
+        "Dados inválidos": "Invalid data!",
+        "Verifique os campos destacados!": "Check the highlighted fields.",
+        "Nome": "Name",
+        "Telefone": "Phone",
+        "WhatsApp (Opcional)": "WhatsApp (Optional)",
+        "Pessoa Física": "Physical person",
+        "Pessoa Jurídica": "Legal Entity",
+        "CPF (Opcional)": "CPF (Optional)",
+        "Produtor de Ideias": "Idea Producer",
+        "Interessado em Soluções": "Interested in Solutions",
+        "Contribuidor e Investidor": "Contributor and Investor",
+        "E-mail": "Email address",
+        "Senha (mínimo de 8 caracteres)": "Password (minimum 8 characters)",
+        "Confirmar Senha": "Confirm Password",
+        "Salvar": "Save"
+    },
+    "Home": {
+        "Estatísticas do COVID-19": "COVID-19 Statistics",
+        "Monitor do COVID-19": "COVID-19 Monitor",
+        "Notícias do COVID-19": "COVID-19 News",
+        "Monitor de Fake News": "Fake News Monitor",
+        "Introdução": {
+            "Título": "TIME TO START AGAIN !",
+            "Subtítulo": "REVIVE is an integrated and collaborative platform of IDEAS and SOLUTIONS to support the fight against COVID-19.",
+            "Descrição": "like the tides that ebb and flow, so everything comes in and goes out! Some waves must be faced with courage and a smile; others  may break on our backs, but we stand firm...",
+            "Subdescrição": "Unexpectedly big waves, of the kind we have never seen, may come our way, and scare us. We must look at them -  in the face, so to speak  - and,  maintaining our composure,  dodge them, humbly and thoughtfully, and let them pass!",
+            "Subsubdescrição": "Because they certainly pass... and we will get back on our feet again, better and stronger!"
+        },
+        "Cards": [
+            {
+                "Título": "Ideas",
+                "Descrição": "Share HERE actions and products to fight COVID-19 for a better world.",
+                "Botão": "Register"
+            },
+            {
+                "Título": "Solutions",
+                "Descrição": "Discover HERE innovative ideas you are looking for to fight COVID-19.",
+                "Botão": "Search"
+            },
+            {
+                "Título": "Support",
+                "Descrição": "Give your support HERE to existing solutions to combat COVID-19.",
+                "Botão": "Help"
+            }
+        ]
+    },
+    "investimentos/Dashboard": {
+        "solucoes": [
+            {
+                "titulo": "REVIVE Fund",
+                "descricao": "Contribute to the maintenance, administration and improvement of the REVIVE platform.",
+                "icone": "ni ni-money-coins",
+                "botao": "Contribute",
+                "link": "#/desenvolvimento",
+                "texto_modal": "The REVIVE platform is the responsibility of Prof. Mauro Oliveira, researcher of the Graduate Program in Computer Science (PPGCC) of IFCE.",
+                "texto_modal_secundario": "This project was developed by teachers and students of PPGCC. The purpose of REVIVE Fund is to obtain resources for maintenance, administration and improvement of this platform.",
+                "texto_modal_alerta": ""
+            },
+            {
+                "titulo": "Financial Support",
+                "descricao": "Support financially one of the IDEAS registered on the REVIVE platform.",
+                "icone": "ni ni-money-coins",
+                "botao": "Support",
+                "link": "#/solucoes_lista",
+                "texto_modal": "It is simple to financially support one of the IDEAS registered in the REVIVE. You select one of the registered projects (Action Area, IDEIA Status or Search with Keywords). After the selection, you must contact the RESPONSIBLE for the project to give your contribution.",
+                "texto_modal_secundario": "We suggest that 1% of your collaboration be donated to the Revive Fund.",
+                "texto_modal_alerta": "IMPORTANT: The REVIVE platform does not assume any kind of responsibility in the application of the donated resources."
+            },
+            {
+                "titulo": "Start a partnership",
+                "descricao": "Start a partnership with the person in charge of one of the IDEIAS registered on the REVIVE platform.",
+                "icone": "ni ni-building",
+                "botao": "Start",
+                "link": "#/desenvolvimento",
+                "texto_modal": "It is simple to make a COMMERCIAL or ACADEMIC partnership with one of the IDEAS registered on REVIVE. You select one of the registered projects by the type of BUSINESS that your are interested.",
+                "texto_modal_secundario": "Then, you can select the project by IDEIA's Action Area, IDEIA Status, or Keyword Search. After selecting one project, you must contact the RESPONSIBLE to propose a  partnership.",
+                "texto_modal_alerta": "IMPORTANT: The REVIVE platform does not assume any kind of responsibility in the partnerships made."
+            }
+        ],
+        "complemento": {
+            "modal": {
+                "informacoes": "For more information, please contact: mauro@lar.ifce.edu.br",
+                "ideias_b": "List of Ideas"
+            },
+            "nav_buttons": {
+                "back": "Back"
+            }
+        },
+        "Forum/Lista": {
+            "complemento": {
+                "nav_buttons": {
+                    "back": "Black"
+                }
+            }
+        }
+    },
+    "forum": {
+        "Lista": {
+            "forum": {
+                "more": "More",
+                "join_forum": "Join Forum",
+                "edit": "Edit",
+                "delete": "Delete",
+                "modal_title": {
+                    "link": "Link",
+                    "description": "Description",
+                    "name": "Name",
+                    "contact": "Contact",
+                    "general": "General",
+                    "responsable": "responsable"
+                },
+                "modal_warning": {
+                    "heading": "You really want to delete this forum?",
+                    "warning": "The exclusion is permanent  and irreversible!",
+                    "cancel": "Cancel",
+                    "delete": "Delete"
+                },
+                "modal_join": {
+                    "title": "How to join the forum?",
+                    "link": "The link has already been copied to your clipboard!",
+                    "copie_link": "Copie the link again",
+                    "send_link_1": "1. Send the link to one of your WhatsApp contacts.",
+                    "send_link_2": "2. Click on \"See group\" to enter the Forum.",
+                    "send_link_3": "Use Ctrl + V to paste the link into WhatsApp!",
+                    "open_whatsapp": "Open WhatsApp Web",
+                    "I_understood": "I understood"
+                }
+            },
+            "complemento": {
+                "nav_buttons": {
+                    "back": "Black",
+                    "filter_all": "Show All Forums",
+                    "filter_my": "Show My Forums",
+                    "registe": "Register a New Forum"
+                }
+            }
+        },
+        "Cadastro": {
+            "title": "Register Your Forum",
+            "ph_forum_name": "Forum Name",
+            "ph_forum_link": "Link to join to the Forum",
+            "whatsapp_link": "Create a group in WhatsApp and enter the link in the field above",
+            "ph_forum_description": "Description",
+            "save": "Save"
+        }
+    },
+    "Colaborador||Investidor": {
+        "text-warning": "Would you like to enlist?",
+        "description": "Motivational text ...",
+        "badge_warning1": "#peace",
+        "badge_warning2": "#love",
+        "badge_warning3": "#success",
+        "button_register": "Enlist me",
+        "text-primary": "Would you like to register a solution?",
+        "button_solucoes_cadastro": "Register a solution"
+    },
+    "Item": {
+        "text-sucess": "Register Idea",
+        "salvar": "Save"
+    },
+    "Em Desenvolvimento": {
+        "title": "Page in Development",
+        "lead": "We are working on the development of this page, soon you will be able to enjoy its wonderful resources ;)"
+    },
+    "solucoes": {
+        "Cadastro": {
+            "caracteres": "characters.",
+            "Quantidade máxima de caracteres excedida! Por favor seja mais conciso": "Maximum number of characters exceeded! Please be more concise."
+        }
+    }
+}
