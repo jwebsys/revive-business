@@ -109,7 +109,12 @@
         "Entrar no REVIVE": "Entrar no REVIVE",
         "Criar Conta": "Criar Conta",
         "Mostrar Senha": "Exibir Senha",
-        "Esqueci a Senha": "Esqueci a Senha"
+        "Esqueci a Senha": "Esqueci a Senha",
+        "alerta":{
+            "login_sucesso":"Logado com sucesso!",
+            "campos_vazios":"Campos vazios! Preencha-os corretamente.",
+            "campos_invalidos": "Campos inválidos!"
+        }
     },
     "Noticias": {
         "Título": "Título",

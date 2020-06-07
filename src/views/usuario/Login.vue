@@ -116,32 +116,45 @@ export default {
               this.alerta = {
                 ver: true,
                 sucesso: "true",
-                mensagem: "Logado com Sucesso!"                
+                mensagem: this.$t("Login.alerta.login_sucesso")
               };
               console.log(this.alerta.mensagem);
               pessoa = this.http.logar(this.login);
+              console.log("pessoa:"+pessoa);
               this.$router.push(this.$route.query.rota);
             }).catch(() => {
+              this.alerta = {
+                ver: true,
+                sucesso: "false",
+                mensagem: this.$t("Login.alerta.campos_invalidos")
+              }
               console.log("Falha na autenticação!");
             });
-      } else {        
+      } else {
+        this.alerta.ver = false;  
         this.alerta = {
           ver: true,
           sucesso: "false",
-          mensagem: "Credenciais Incorretas!"
+          mensagem: this.$t("Login.alerta.campos_vazios")
         };
       }
     },
     async get_login() {
-      //TODO: fazer implementação para pegar dados do usuário acessando a classe OAuth
-
-      // let pessoa = localStorage.getItem("pessoa");
-      // if (pessoa) {
-      //   pessoa = JSON.parse(pessoa);
-      //   this.pessoa = pessoa;
-      //   this.login.email = this.pessoa.email;
-      //   this.login.senha = this.pessoa.senha;
-      // }
+      if(this.$OAuth.decode === undefined)
+        return;
+      const {header, payload} = this.$OAuth.decode;
+      if ( header === undefined || payload === undefined )
+        return;
+      // this.login.user_id = payload.user.id;
+      this.login.email = payload.user.email;
+      this.alerta.ver = false;
+      this.alerta = {
+              ver: true,
+              sucesso: "true",
+              mensagem: "Logado com Sucesso!"                
+            };
+      this.$router.push(this.$route.query.rota);
+      // console.log("Login-email: "+this.login.email);
     }
   }
 };

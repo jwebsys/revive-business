@@ -36,8 +36,9 @@
               <li class="mx-4">
                 <a class="menu-text" href="#/contato">{{$t('Fale com A GENTE')}}</a>
               </li>
-              <li class="mx-4">
-                <a class="menu-text" href="#/login">Login</a>
+              <li class="mx-4">  
+                <a class="menu-text" href="#/login?rota=usuario_solucoes_lista" v-show="!$OAuth.isLogged">Login</a>
+                <a class="menu-text" href="./" @click="$OAuth.logout()" v-show="$OAuth.isLogged">Logout</a>
               </li>
             </ul>
           </nav>
@@ -380,6 +381,7 @@ export default {
     if (pessoa && pessoa._id) this.pessoa = pessoa;
     // await this.corona_noticias();
     // this.change_carousel(0);
+    console.log("isLogged: "+this.$OAuth.isLogged);
   },
   methods: {
     corona_noticias() {

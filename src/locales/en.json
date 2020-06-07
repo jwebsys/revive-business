@@ -109,7 +109,12 @@
         "Entrar no REVIVE": "Enter REVIVE",
         "Criar Conta": "Create an Account",
         "Mostrar Senha": "Show Password",
-        "Esqueci a Senha": "Forgot Password"
+        "Esqueci a Senha": "Forgot Password",
+        "alerta":{
+            "login_sucesso":"Login successfully!",
+            "campos_vazios":"Empty fields! Fill them out correctly.",
+            "campos_invalidos": "Invalid fields! Try again."
+        }
     },
     "Noticias": {
         "Título": "Title",

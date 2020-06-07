@@ -62,6 +62,20 @@ export const OAuth = new (class {
     }
     return true;
   }
+  
+  get decode() {
+    if (this.accessToken === null) {
+      return;
+    }
+    const [headerB64, payloadB64] = this.accessToken.split('.');    
+    // These supports parsing the URL safe variant of Base64 as well.
+    const headerStr = new Buffer(headerB64, 'base64').toString();
+    const payloadStr = new Buffer(payloadB64, 'base64').toString();
+    return {
+        header: JSON.parse(headerStr),
+        payload: JSON.parse(payloadStr)
+    };
+  }
 
   async requestToken({ grantType, username, password }) {
     return this.axios
@@ -81,7 +95,7 @@ export const OAuth = new (class {
         this.refreshToken = res.data.refresh_token;
         // store.dispatch('setAuth', { user: this.tokenPayload.user })
       });
-  }
+    }
 
   async login(username, password) {
     await this.requestToken({
@@ -97,8 +111,10 @@ export const OAuth = new (class {
     return this.accessToken;
   }
 
+
   async logout() {
     this.accessToken = undefined;
+    this.refreshToken = undefined;
     this.cache = {};
   }
 })();
