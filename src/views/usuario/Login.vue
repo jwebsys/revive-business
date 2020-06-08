@@ -18,11 +18,11 @@
             class="mb-5 text-warning text-capitalize"
             type="white"
             @click="$router.go(-1)"
-          >{{$t('Voltar')}}</base-button>
+            >{{ $t("Voltar") }}</base-button
+          >
         </div>
       </div>
-
-      <alerta v-if="alerta.ver" :sucesso="alerta.sucesso" :mensagem="alerta.mensagem" />
+     <alerta v-if="alerta.ver" :sucesso="alerta.sucesso" :mensagem="alerta.mensagem" />
 
       <div class="row justify-content-center">
         <div class="col-lg-5">
@@ -33,27 +33,51 @@
             body-classes="px-lg-5 py-lg-5"
             class="border-0"
           >
-            <h4
-              class="mb-4 text-warning font-weight-bold text-center"
-            >{{$t('Login.Entrar no REVIVE')}}</h4>
+            <h4 class="mb-4 text-warning font-weight-bold text-center">
+              {{ $t("Login.Entrar no REVIVE") }}
+            </h4>
             <template>
               <form role="form">
-                <base-input class="mb-3" placeholder="Email" v-model="login.email"></base-input>
                 <base-input
-                  :type="!passwordVisible? 'password' : 'text'"
+                  class="mb-3"
+                  placeholder="Email"
+                  v-model="username"
+                  name="username"
+                  autocomplete="username"
+                ></base-input>
+                <base-input
+                  :type="!passwordVisible ? 'password' : 'text'"
                   :placeholder="$t('Senha')"
                   addon-left-icon="ni ni-lock-circle-open"
-                  v-model="login.senha"
+                  v-model="password"
+                  name="password"
+                  autocomplete="password"
+                  @keyup.enter="entrar"
                 ></base-input>
-                <base-checkbox v-model="passwordVisible">{{$t("Login.Mostrar Senha")}}</base-checkbox>
+                <base-checkbox v-model="passwordVisible">{{
+                  $t("Login.Mostrar Senha")
+                }}</base-checkbox>
                 <div class="text-center">
-                  <base-button type="warning" class="my-4 text-capitalize" @click="entrar()">Login</base-button>
+                  <base-button
+                    type="warning"
+                    class="my-4 text-capitalize"
+                    @click="entrar()"
+                    >Login</base-button
+                  >
                   <base-button
                     type="white"
                     text-color="warning"
                     class="my-4 text-normal"
                     @click="$router.push('registro')"
-                  >{{$t('Login.Criar Conta')}}</base-button>
+                    >{{ $t("Login.Criar Conta") }}</base-button
+                  >
+                  <base-button
+                type="white"
+                text-color="warning"
+                class="ml-auto text-normal"
+                @click="$router.push('esqueceu_senha')"
+                >{{ $t("Login.Esqueci a Senha") }}</base-button
+              >
                 </div>
               </form>
             </template>
@@ -61,12 +85,7 @@
           <div class="row mt-4 mb-5">
             <div class="col-6"></div>
             <div class="col-6 text-right">
-              <base-button
-                type="white"
-                text-color="warning"
-                class="ml-auto text-normal"
-                @click="$router.push('esqueceu_senha')"
-              >{{$t('Login.Esqueci a Senha')}}</base-button>
+              
             </div>
           </div>
         </div>
@@ -77,85 +96,37 @@
 
 <script>
 import http from "../../services/http";
+import { OAuth } from '../../services/oauth'
 
 export default {
   data() {
     return {
-      http: new http(),
       alerta: { ver: false, sucesso: "false", mensagem: "" },
-      pessoa: {
-        colaborador: false,
-        investidor: false,
-        cliente: false,
-        tipo: "",
-        cpf: "",
-        cnpj: "",
-        nome: "",
-        email: "",
-        telefone: "",
-        senha: "",
-        admin: false
-      },
-      login: {
-        email: "",
-        senha: ""
-      },
-      passwordVisible: false
+      username: null,
+      password: null,
+      passwordVisible: false,
     };
-  },
-  async mounted() {
-    await this.get_login();
   },
   methods: {
     async entrar() {
-      let pessoa = undefined;
-      if (this.login.email.length !== 0 && this.login.senha.length !== 0) {
-        this.alerta.ver = false;
-        this.$OAuth.login(this.login.email, this.login.senha)
-            .then(()=>{
-              this.alerta = {
+      this.alerta.ver = false;
+      OAuth.login(this.username, this.password).then(() => {
+        this.alerta = {
                 ver: true,
                 sucesso: "true",
                 mensagem: this.$t("Login.alerta.login_sucesso")
               };
-              console.log(this.alerta.mensagem);
-              pessoa = this.http.logar(this.login);
-              console.log("pessoa:"+pessoa);
-              this.$router.push(this.$route.query.rota);
-            }).catch(() => {
-              this.alerta = {
+        
+        this.$router.push(this.$router.currentRoute.query.redirect || '/');
+      }).catch(() => {
+        this.alerta = {
                 ver: true,
                 sucesso: "false",
                 mensagem: this.$t("Login.alerta.campos_invalidos")
-              }
-              console.log("Falha na autenticação!");
-            });
-      } else {
-        this.alerta.ver = false;  
-        this.alerta = {
-          ver: true,
-          sucesso: "false",
-          mensagem: this.$t("Login.alerta.campos_vazios")
-        };
-      }
+              };
+        
+      })
     },
-    async get_login() {
-      if(this.$OAuth.decode === undefined)
-        return;
-      const {header, payload} = this.$OAuth.decode;
-      if ( header === undefined || payload === undefined )
-        return;
-      // this.login.user_id = payload.user.id;
-      this.login.email = payload.user.email;
-      this.alerta.ver = false;
-      this.alerta = {
-              ver: true,
-              sucesso: "true",
-              mensagem: "Logado com Sucesso!"                
-            };
-      this.$router.push(this.$route.query.rota);
-      // console.log("Login-email: "+this.login.email);
-    }
-  }
+  },
 };
 </script>

@@ -15,13 +15,13 @@
                 </a>
             </slot>
             <navbar-toggle-button :toggled="toggled"
-                                  :target="contentId"
+                                  :target="contentId && contentId"
                                   @click.native.stop="toggled = !toggled">
             </navbar-toggle-button>
 
             <slot name="container-after"></slot>
 
-            <div class="collapse navbar-collapse" :class="{show: toggled}" :id="contentId" v-click-outside="closeMenu">
+            <div class="collapse navbar-collapse" :class="{show: toggled}" :id="contentId && contentId" v-click-outside="closeMenu">
                 <div class="navbar-collapse-header">
                     <slot name="content-header" :close-menu="closeMenu"></slot>
                 </div>

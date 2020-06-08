@@ -16,5 +16,8 @@ export default {
   components: {
     FadeTransition
   },
+  created(){
+   
+  }
 };
 </script>

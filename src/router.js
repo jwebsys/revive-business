@@ -24,10 +24,11 @@ import NoticiasLista from './views/noticias/Lista.vue'
 import EsqueceuSenha from './views/usuario/EsqueceuSenha.vue'
 import Sobre from './views/Sobre.vue'
 import Contato from './views/Contato.vue'
+import { OAuth } from './services/oauth'
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   linkExactActiveClass: "active",
   routes: [
     {
@@ -87,6 +88,7 @@ export default new Router({
     {
       path: "/usuario_solucoes_lista",
       name: "usuario_solucoes_lista",
+      meta: { auth: true },
       components: {
         header: AppHeader,
         default: UsuarioSolucoesLista,
@@ -236,4 +238,17 @@ export default new Router({
       return { x: 0, y: 0 };
     }
   }
-});
+})
+
+router.beforeEach((to, from, next) => {
+
+  const hasAuth = to.matched.some(r => !!r.meta.auth)
+  
+  if (!hasAuth) return next()
+
+  if (!OAuth.isLogged) return next(`/login?redirect=${to.path}`)
+
+  next()
+})
+
+export default router

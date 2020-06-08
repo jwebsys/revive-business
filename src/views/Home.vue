@@ -36,9 +36,9 @@
               <li class="mx-4">
                 <a class="menu-text" href="#/contato">{{$t('Fale com A GENTE')}}</a>
               </li>
-              <li class="mx-4">  
-                <a class="menu-text" href="#/login?rota=usuario_solucoes_lista" v-show="!$OAuth.isLogged">Login</a>
-                <a class="menu-text" href="./" @click="$OAuth.logout()" v-show="$OAuth.isLogged">Logout</a>
+              <li class="mx-4">
+                <a v-if="!oauth" class="menu-text" href="#/login">Login</a>
+                <a v-else="oauth"  @click.prevent="logout" class="menu-text" href="#">{{oauth.user.primeiroNome}} {{$t('Sair')}}</a>
               </li>
             </ul>
           </nav>
@@ -150,8 +150,7 @@
                     class="mt-4 btn-block"
                     type="warning text-normal"
                     style="font-size: 16px"
-                    @click="card.login && pessoa._id == ''? $router.push({ name: 'login', 
-                      query: { rota: card.link }}) : $router.push(card.link)"
+                    @click="$router.push(card.link)"
                   >{{$t('Home.Cards[' + index + '].Botão')}}</base-button>
                 </div>
               </card>
@@ -340,14 +339,17 @@
 <script>
 import Modal from "@/components/Modal.vue";
 import http from "../services/http";
+import { OAuth } from "../services/oauth";
+
 export default {
   components: {
     Modal
   },
   data() {
     return {
+      oauth : OAuth.tokenPayload,
       http: new http(),
-      pessoa: { _id: "" },
+      // pessoa: { _id: "" },
       carousel: 0,
       carousels: ["COVID-19", "Introdução"],
       noticias_corona: {},
@@ -375,37 +377,42 @@ export default {
     };
   },
   async mounted() {
-    let pessoa = {};
-    pessoa = await localStorage.getItem("pessoa");
-    pessoa = await JSON.parse(pessoa);
-    if (pessoa && pessoa._id) this.pessoa = pessoa;
+    // let pessoa = {};
+    // pessoa = await localStorage.getItem("pessoa");
+    // pessoa = await JSON.parse(pessoa);
+    // if (pessoa && pessoa._id) this.pessoa = pessoa;
     // await this.corona_noticias();
-    // this.change_carousel(0);
-    console.log("isLogged: "+this.$OAuth.isLogged);
+    //this.change_carousel(0);
   },
   methods: {
-    corona_noticias() {
-      this.http
-        .get("corona_noticia")
-        .then(async data => {
-          this.noticias_corona = await data;
-          console.log(this.noticias_corona);
-        })
-        .catch(err => {
-          console.error(err);
-        });
+
+    logout(){
+      OAuth.logout();
+      this.$router.push('/login');
     },
 
-    change_carousel: async function(n) {
-      this.carousel = n;
-      var that = this;
-      setTimeout(function() {
-        n = n + 1;
-        if (n > that.carousels.length - 1) n = 0;
-        console.log(n);
-        that.change_carousel(n);
-      }, 5000);
-    }
+    // corona_noticias() {
+    //   this.http
+    //     .get("corona_noticia")
+    //     .then(async data => {
+    //       this.noticias_corona = await data;
+    //       console.log(this.noticias_corona);
+    //     })
+    //     .catch(err => {
+    //       console.error(err);
+    //     });
+    // },
+
+    // change_carousel: async function(n) {
+    //   this.carousel = n;
+    //   var that = this;
+    //   setTimeout(function() {
+    //     n = n + 1;
+    //     if (n > that.carousels.length - 1) n = 0;
+    //     console.log(n);
+    //     that.change_carousel(n);
+    //   }, 5000);
+    // }
   }
 };
 </script>
