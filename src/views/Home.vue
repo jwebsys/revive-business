@@ -38,7 +38,7 @@
               </li>
               <li class="mx-4">
                 <a v-if="!oauth" class="menu-text" href="#/login">Login</a>
-                <a v-else="oauth"  @click.prevent="logout" class="menu-text" href="#">{{oauth.user.primeiroNome}} {{$t('Sair')}}</a>
+                <a v-else  @click.prevent="logout" class="menu-text" href="#">{{oauth.user.primeiroNome}} {{$t('Sair')}}</a>
               </li>
             </ul>
           </nav>
@@ -134,7 +134,10 @@
         <div class="col-lg-12">
           <div class="row row-grid">
             <div v-for="(card, index) in cards" :key="index" class="col-lg-4 mb-5">
-              <card class="border-0 text-center" shadow body-classes="py-5">
+              <card 
+                class="border-0 text-center" 
+                shadow body-classes="py-5"
+              >
                 <icon
                   :name="card.icone"
                   class="mb-3"
@@ -143,110 +146,30 @@
                   shadow
                   rounded
                 ></icon>
-                <h4 class="text-default">{{$t('Home.Cards[' + index + '].Título')}}</h4>
-                <p v-if="index < 3" class="mt-3">{{$t('Home.Cards[' + index + '].Descrição')}}</p>
-                <div class="text-center">
+                <h4 class="text-default" style="min-height:80px">{{$t('Home.Cards[' + index + '].Título')}}</h4>
+                <p v-if="index < 6" class="mt-3">{{$t('Home.Cards[' + index + '].Descrição')}}</p>
+                  <img
+                    v-if="index >= 3"
+                    style="height: 160px; margin: 5px; border-radius: 20px"
+                    :src="card.img"
+                    lazy="loaded"
+                  />
                   <base-button
+                    v-if="index < 4"
                     class="mt-4 btn-block"
                     type="warning text-normal"
                     style="font-size: 16px"
                     @click="$router.push(card.link)"
                   >{{$t('Home.Cards[' + index + '].Botão')}}</base-button>
-                </div>
-              </card>
-            </div>
-            <div class="col-lg-4 mb-5">
-              <card class="border-0 text-center" shadow body-classes="py-5">
-                <div style="height: 126px" class="mb-3">
-                  <icon
-                    class="mb-3"
-                    name="ni ni-chat-round"
-                    gradient="warning"
-                    color="white"
-                    shadow
-                    rounded
-                  ></icon>
-                  <h4 class="text-default">{{$t('Fóruns de Discussão')}}</h4>
-                </div>
-                <div>
-                  <img
-                    style="height: 160px; margin: 5px; border-radius: 20px"
-                    src="img/forum.jpg"
-                    lazy="loaded"
-                    alt="Smiley face"
-                  />
-                </div>
-                <base-button
-                  class="mt-4 btn-block btn-block"
-                  type="warning text-normal"
-                  style="font-size: 16px"
-                  @click="pessoa._id == ''? $router.push({ name: 'login', 
-                      query: { rota: 'forum_lista' }}) : $router.push('forum_lista')"
-                >{{$t('Entrar')}}</base-button>
-              </card>
-            </div>
-            <div class="col-lg-4 mb-5">
-              <card class="border-0 text-center" shadow body-classes="py-5">
-                <div style="height: 126px" class="mb-3">
-                  <icon
-                    class="mb-3"
-                    name="ni ni-settings-gear-65"
-                    gradient="warning"
-                    color="white"
-                    shadow
-                    rounded
-                  ></icon>
-                  <h4 class="text-default">{{$t('Aconselhamento Tecnológico')}}</h4>
-                </div>
-                <div class="text-center">
-                  <div>
-                    <img
-                      style="height: 160px; margin: 5px; border-radius: 20px"
-                      src="img/tecnologico.jpg"
-                      lazy="loaded"
-                    />
-                  </div>
                   <base-button
+                    v-else
                     class="mt-4 btn-block"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdOXMzVslwcmCE_k8OG4BHBoNINWaurJtp2yH4s449L_xaOMg/viewform"
+                    :href= "card.link"
                     type="warning text-normal"
                     style="font-size: 16px"
                     tag="a"
                     target="_blank"
-                  >{{$t('Solicitar')}}</base-button>
-                </div>
-              </card>
-            </div>
-            <div class="col-lg-4 mb-5">
-              <card class="border-0 text-center" shadow body-classes="py-5">
-                <div style="height: 126px" class="mb-3">
-                  <icon
-                    class="mb-3"
-                    name="ni ni-money-coins"
-                    gradient="warning"
-                    color="white"
-                    shadow
-                    rounded
-                  ></icon>
-                  <h4 class="text-default">{{$t('Aconselhamento Econômico')}}</h4>
-                </div>
-                <div class="text-center">
-                  <div>
-                    <img
-                      style="height: 160px; margin: 5px; border-radius: 20px"
-                      src="img/economico.jpg"
-                      lazy="loaded"
-                    />
-                  </div>
-                  <base-button
-                    class="mt-4 btn-block"
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSdBTiVxsNkxH6nX4DOASHYZqeITv6XBWBccb_-tZr0QJBxDeA/viewform"
-                    type="warning text-normal"
-                    style="font-size: 16px"
-                    tag="a"
-                    target="_blank"
-                  >{{$t('Solicitar')}}</base-button>
-                </div>
+                  >{{$t('Home.Cards[' + index + '].Botão')}}</base-button>
               </card>
             </div>
           </div>
@@ -372,6 +295,24 @@ export default {
           icone: "ni ni-money-coins",
           link: "dashboard_investimento",
           login: false
+        },
+        {
+          icone: "ni ni-chat-round",
+          link: "forum_lista",
+          login: true,
+          img: "img/forum.jpg"
+        },
+        {
+          icone: "ni ni-settings-gear-65",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSdOXMzVslwcmCE_k8OG4BHBoNINWaurJtp2yH4s449L_xaOMg/viewform",
+          login: false,
+          img: "img/tecnologico.jpg"
+        },
+        {
+          icone: "ni ni-money-coins",
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSdBTiVxsNkxH6nX4DOASHYZqeITv6XBWBccb_-tZr0QJBxDeA/viewform",
+          login: false,
+          img: "img/economico.jpg"
         }
       ]
     };

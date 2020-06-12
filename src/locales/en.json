@@ -102,9 +102,10 @@
     "À Procura de Financiamento Privado": "Seeking Private Finance",
     "Salvar": "Save",
     "Tipo": "Type",
-    "Entrar": "Enter",
     "Solicitar": "Request",
     "Bio": "Professor at IFCE (since 1974)",
+    "Entrar": "Enter",
+    "Sair":"Exit",
     "Login": {
         "Entrar no REVIVE": "Enter REVIVE",
         "Criar Conta": "Create an Account",
@@ -174,6 +175,21 @@
                 "Título": "Support",
                 "Descrição": "Give your support HERE to existing solutions to combat COVID-19.",
                 "Botão": "Help"
+            },
+            {
+                "Título":"Discussion Forums",
+                "Descrição": "",
+                "Botão": "Enter"
+            },
+            {
+                "Título":"Technological Advice",
+                "Descrição": "",
+                "Botão": "Request"
+            },
+            {
+                "Título":"Economic Advice",
+                "Descrição": "",
+                "Botão": "Request"
             }
         ]
     },

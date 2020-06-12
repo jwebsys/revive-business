@@ -70,6 +70,7 @@ const router = new Router({
     {
       path: "/forum_cadastro",
       name: "forum_cadastro",
+      meta: { auth: true }, //Obriga o usuário a se autenticar
       components: {
         header: AppHeader,
         default: ForumCadastro,
@@ -79,6 +80,7 @@ const router = new Router({
     {
       path: "/forum_lista",
       name: "forum_lista",
+      meta: { auth: true },
       components: {
         header: AppHeader,
         default: ForumLista,
@@ -116,6 +118,7 @@ const router = new Router({
     {
       path: "/solucoes_cadastro",
       name: "solucoes_cadastro",
+      meta: { auth: true }, //Obriga o usuário a se autenticar
       components: {
         header: AppHeader,
         default: SolucoesCadastro,

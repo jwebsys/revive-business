@@ -102,9 +102,10 @@
     "À Procura de Financiamento Privado": "À Procura de Financiamento Privado",
     "Salvar": "Salvar",
     "Tipo": "Tipo",
-    "Entrar": "Entrar",
     "Solicitar": "Solicitar",
     "Bio": "Professor do IFCE (desde 1974)",
+    "Entrar": "Entrar",
+    "Sair": "Sair",
     "Login": {
         "Entrar no REVIVE": "Entrar no REVIVE",
         "Criar Conta": "Criar Conta",
@@ -172,6 +173,21 @@
                 "Título": "Apoio",
                 "Descrição": "Dê seu apoio AQUI às soluções já existentes para combater o COVID-19.",
                 "Botão": "Contribuir"
+            },
+            {
+                "Título":"Fóruns de Discussão",
+                "Descrição": "",
+                "Botão": "Entrar"
+            },
+            {
+                "Título":"Aconselhamento Tecnológico",
+                "Descrição": "",
+                "Botão": "Solicitar"
+            },
+            {
+                "Título":"Aconselhamento Econômico",
+                "Descrição": "",
+                "Botão": "Solicitar"
             }
         ]
     },

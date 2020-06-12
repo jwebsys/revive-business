@@ -62,20 +62,6 @@ export const OAuth = new (class {
     }
     return true;
   }
-  
-  get decode() {
-    if (this.accessToken === null) {
-      return;
-    }
-    const [headerB64, payloadB64] = this.accessToken.split('.');    
-    // These supports parsing the URL safe variant of Base64 as well.
-    const headerStr = new Buffer(headerB64, 'base64').toString();
-    const payloadStr = new Buffer(payloadB64, 'base64').toString();
-    return {
-        header: JSON.parse(headerStr),
-        payload: JSON.parse(payloadStr)
-    };
-  }
 
   async requestToken({ grantType, username, password }) {
     return this.axios
