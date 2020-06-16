@@ -30,10 +30,6 @@
     "vuelidate": "^0.7.5",
     "vuetify": "^2.2.27"
   },
-  "engines": {
-    "npm": "6.14.4"
-  },
-
   "devDependencies": {
     "@kazupon/vue-i18n-loader": "^0.3.0",
     "@vue/cli-plugin-babel": "^3.4.0",
