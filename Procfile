@@ -1,1 +1,1 @@
-web: yarn run vue-cli-service serve -o --watch
+web: yarn vue-cli-service serve 
