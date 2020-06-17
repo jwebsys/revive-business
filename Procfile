@@ -1,1 +1,0 @@
-web: yarn vue-cli-service serve
