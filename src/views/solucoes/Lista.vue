@@ -339,6 +339,7 @@ import Modal from "@/components/Modal.vue";
 import http from "../../services/http";
 import Dropdown from "../../components/BaseDropdown.vue";
 import axios from "axios";
+import { API_BASE } from '../../config';
 
 export default {
   components: {
@@ -410,7 +411,7 @@ export default {
         if (this.negocio == "Todos") this.negocio = await "";
         axios
           .get(
-            "https://portifolio-corona-api.herokuapp.com/solucao/busca/",
+            API_BASE+"solucao/busca/",
             // "http://localhost:3000/solucao/busca/",
             {
               params: {

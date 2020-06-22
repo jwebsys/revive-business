@@ -122,7 +122,7 @@
         <img class="logos" src="img/if.png" />
         <img class="logos" src="img/home/iracema.png" />
         <img class="logos" src="img/citinova.jpg" />
-        <img class="logos" src="img/estado.jpg" />
+        <img class="logos" src="img/sedet.png" />
       </div>
       <div class="d-flex flex-wrap pr-5 mr-3" style="justify-content: right">
         <p class="text-dark">Designed by rawpixel.com / Freepik</p>
